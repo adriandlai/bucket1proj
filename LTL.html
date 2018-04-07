@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Proyecto Uno</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="LTL.html">LTL</a></li>
+        <li><a href="meetup.html">Meetup</a></li>
+        <li><a href="goalsetting.html">Goal Setting</a></li>
+        <li><a href="aboutmetest.html">About Adrian</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mainLTL">
+    <div class="divLTL">
+      <h2 class="LTLh2">Learn to Learn</h2>
+      <article>
+        <button class="accordion">07 Feb 18 - Gots to "Git" it...</button>
+        <div class="panel">
+          <h4>Setting the Stage</h4>
+          <p>
+            Earlier today I learned how to use git and github. I set the stage by making sure that I am in a place where I don't get distracted. As you can see in the picture below. I set the stage by going to a coffee</p>
+
+          <p><a href="https://drive.google.com/file/d/1Mt9COH3AiFxrWcMfMKGXa3s3BR42eelH/view?usp=sharing">Setting the stage</a>     </p>
+
+          <p> I am learning git and github in order to understand that a fundamental tool for development.</p>
+          <h4>Reflection</h4>
+          <p>
+            I played with the content by going ahead testing out different ways to do a push. For example, I had previously done git push master origin because that is what I had previously done but tried it just do
+          </p>
+          <h4>What's Next</h4>
+          <p>
+            Being able to use git and github is setting the foundation to be able to collaborate with other developers. In the future I will learn the nuances of adding to open sourced projects
+          </p>
+        </div>
+        <button class="accordion">15 Feb 18 - DOM DOM DOM DOM....DOM.....!!!!</button>
+        <div class="panel">
+          <h4>Setting the Stage</h4>
+          <p>
+            I set the stage by turning off all of my notifications.
+            I also set of goal of working through and reading three of the links with DOM.</p>
+            <p><a href= "https://drive.google.com/file/d/1Mt9COH3AiFxrWcMfMKGXa3s3BR42eelH/view?usp=sharing">Setting the stage</a></p>
+          <h4>Reflection</h4>
+          <p>
+            The concept of DOM is coming into focus. Took notes and read through the three links that I wanted to.
+            Struggled with the concepts by going back and referring to the previous resources as I read through newer ones.
+            Setting the stage helped me in the play phase because it kept me focused on completing the three links and not
+            having a "quick" distraction and checking slack or the facebooks.
+
+          </p>
+          <h4>What's Next</h4>
+          <p>
+            Next steps with DOM include reading through the rest of the resources provided and then starting the drills
+          </p>
+        </div>
+        <button class="accordion">21 Feb 18 - Wunderful!!!!</button>
+        <div class="panel">
+          <h4>Setting the Stage</h4>
+          <p>
+            I set the stage by getting a cup of coffee and water prepared so I wouldn't have to get up mid session. I also set the stage by getting to Galvanize early and leaving the rest of my bag in the class room and coming to the atrium where I won't get distracted
+            by other classmates getting here early as well. You can see evidence in the link below. I am learning to use wunderlist because I currently use a bunch of digital post its on my laptop and believe this is inefficient.
+          </p>
+          <p><a href = "https://drive.google.com/open?id=1_4YEvMCxGKBjN6dZUR6hBKsWB9PVsYay">Setting the Stage</a></p>
+          <h4>Reflection</h4>
+          <p>
+            I have successfully set up wunderlist on my laptop and my phone. Setting the stage by coming to a place where I won't be disturbed and having my coffee and water ready allowed me to get set up in one sitting. I "played" with wunderlist by figuring out
+            how to manage the lists. I watched somebody's youtube video on their best practices and examples of how they use it.
+          </p>
+          <h4>What's Next</h4>
+          <p>
+            I plan to use this technology in the future by putting all of the things I need to do for personal, work, and class in there.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright @2018</p>
+  </footer>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+
+</html>

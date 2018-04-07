@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Proyecto Uno</title>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="LTL.html">LTL</a></li>
+        <li><a href="meetup.html">Meetup</a></li>
+        <li><a href="goalsetting.html">Goal Setting</a></li>
+        <li><a href="aboutmetest.html">About Adrian</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mainLTL">
+    <div>
+      <h2 class="LTLh2">Learn to Learn</h2>
+      <article>
+        <button class="accordion">Daily Goals 20 Feb 18</button>
+        <div class="panel">
+          <h4>Goals</h4>
+            <ul>
+            <li>Complete slides by the lunch</li>
+            <li>Do two practice routines immediately after lunch </li>
+            <li>Practice at least one more time before 4pm </li>
+            </ul>
+          <h4>Reflection</h4>
+          <p>
+            Goals were met. Couple of successful actions that were done. Setting the goals of having the slides done by lunch kept me from taking too long on just the slides. Going through at least three practice runs helped me be pretty spot on with 8 minutes Wasn't
+            unsuccessful in any of the goals I set since I stayed pretty focused. Tomorrow I will set goals that are a bit more ambitious.
+          </p>
+        </div>
+        <button class="accordion">Daily Goals 21 Feb 18 </button>
+        <div class="panel">
+          <h4>Goals</h4>
+            <ul>
+              <li>Submit two soft skill drills</li>
+              <li>Complete the landing page layout for final project</li>
+              <li>Go to a meetup </li>
+            </ul>
+          <h4>Reflection</h4>
+          <p>
+            All my goals were met. Submitting my two drills in the morning was helpful because it allowed me time to resubmit the on that got kicked back in the afternoon. It also helped that I was able to stay about an hour after class to finish up my landing page.
+            One thing that was not a success was that I spent more time than necessary in photoshop. I tried to make my trifect triangle directly in there rather than dragging a triangle image in there. In the future I will work smarter not harder by
+            taking images rather than trying to create my own entirely.
+          </p>
+        </div>
+        <button class="accordion">Daily Goals - 22 Feb 18 </button>
+        <div class="panel">
+          <h4>Goals</h4>
+            <ul>
+              <li>Submit two more soft skill drills</li>
+              <li>Attend another meetup</li>
+            </ul>
+          <h4>Reflection</h4>
+          <p> Not all of the goals were met.</p>
+          <p> I ended up submitting one soft skill drill and attending the meetup.</p>
+          <p>What worked was again getting a soft skill drill sumbitted in the morning.</p>
+          <p> Also worked to call it quits right after standup so I could make it to the meetup on time.</p>
+          <p>
+            What did not end up working was that I went to some unplanned breakouts. With the rest of the cohorts being here I took advantage of some of the more advanced topics being here. This prevented me from submitting the second drill. However, I think that was the right decision.</p>
+          <p> What I will do differently tomorrow is leave some time for a breakout in my goal setting.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright @2018</p>
+  </footer>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+
+</html>

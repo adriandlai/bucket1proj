@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Proyecto Uno</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="LTL.html">LTL</a></li>
+        <li><a href="meetup.html">Meetup</a></li>
+        <li><a href="goalsetting.html">Goal Setting</a></li>
+        <li><a href="aboutmetest.html">About Adrian</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mainmeetup">
+    <div>
+      <h2 class="LTLh2">Hey...Let's Meet!</h2>
+      <article>
+        <button class="accordion">The Great Reach Gatsby!</button>
+        <div class="panel">
+          <h4>Who I met</h4>
+          <p>
+            Will Klein, Co-organizer Sam Lindstrom, Co-organizer
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I learned that it was actually pretty challenging to listen to a 1.5 hour lecture on pretty technical code that I knew nothing about. In the future I will try and have more of an understanding of the material by spending at least half an hour reviewing
+            topics before going. Also, will also try and go to ones that looks like they will foster more networking rather than just info on a technical topic.
+          </p>
+          <h4>Questions I have</h4>
+          <p>
+            Still pretty much don't understand what was discussed yesterday. So guess a big question is what the whole GatsbyJS and Reason stuff was. Have a high level understanding of what React is but not the difference/interaction with GatsbyJS.
+          </p>
+        </div>
+        <button class="accordion">Google - "Do cool things that matter"</button>
+        <div class="panel">
+          <h4>Who I met</h4>
+          <p>
+            Josh Hudgins - Google Product Manager Cassandra Cummings - Director of Content, Product School
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I learned that one of the most important traits that a good product manager can have is understanding the problem. The speaker made a point that stuck with me which is that it is better to have the right problem rather than the right solution. He gave
+            several examples of where data can mislead people if they don't use their intuition/heurisitc to understand it appropriately. He also made clear that the product manager's role is to maintain the vision and ensure that all of the potential
+            blockers to executing that vision are removed.
+          </p>
+          <h4>Questions I have</h4>
+          <p>
+            One question I have is wondering if the fact that I am also working on my own company will be a red flag for companies if I am interviewing for a full time job as well.
+          </p>
+        </div>
+        <button class="accordion">Founder's Live!!</button>
+        <div class="panel">
+          <h4>Who I met</h4>
+          <p>
+            Chris Oltyan, CEO of Rebric Jim Lamancusa, CEO of Cusa Tea
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I learned about two start ups. One of them was called Rebric. It is a company that is supposedly using machine learning to source candidates to companies. I learned from Chris's pitch that one should be clearly state what their product is. The first question
+            that somemone had after he finished his pitch was what his product was. I also learned that one should not slam the audience that is voting for you. He made an unintended zing saying that Galvanize graduates typically have poor resumes. The
+            other pitch was Jim Lamancusa. He crushed it. I learned about his tea making process. He developed a instant tea process formula that sounds like they are first to market. We learned about his growth strategy as well. While I am not interested
+            in being a marketing manager we learned that he was hiring his second employee.
+          </p>
+          <h4>Questions I have</h4>
+          <p>
+            I still have several questions on what Rebric actually does. Also, I have questions on how to pitch at the next event. I will most likely contact the lady that was running it.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright @2018</p>
+  </footer>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+
+
+
+</html>
